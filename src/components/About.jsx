@@ -1,6 +1,9 @@
 function About() {
   return (
-    <section className="flex items-start justify-start flex-col gap-4 mb-20">
+    <section
+      id="about"
+      className="flex items-start justify-start flex-col gap-4 mb-20 p-4 rounded"
+    >
       <p className="text-left">
         Experienced Senior Software Engineer with over 7.8 years of expertise in
         React.js and Node.js. Highly goal-oriented and consistently seeking new

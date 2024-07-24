@@ -1,19 +1,39 @@
+import Skills from "../components/Skills";
 function Experience() {
+  const list = [
+    "React.js",
+    "Node.js",
+    "Javascript",
+    "React Native",
+    "Expres.js",
+    "PostgreSQL",
+    "HTML",
+    "CSS",
+    "Docker",
+    "Git",
+  ];
+
   return (
-    <section className="flex items-start justify-start flex-col gap-4 mb-20">
+    <section
+      id="experience"
+      className="flex items-start justify-start flex-col gap-4 mb-20"
+    >
       <div>
         <ol>
-          <li className="flex flex-row items-start justify-start gap-4">
-            <span>November 2016-Present</span>
+          <li className="flex flex-row items-start justify-start gap-4 hover:bg-[#162032] p-4 rounded">
+            <span className="text-s  text-[#94a3b8]">2016 - Present</span>
             <div className="flex flex-col items-start justify-start">
               <h2>Tata Consultancy Services</h2>
-              <p className="text-left">
+              <p className="text-left mt-2">
                 Responsible for design, development and maintenance of React.js
                 and Node.js web applications. Accountable for making strategic
                 decisions regarding application architecture, technology stack,
                 security and development practices, ensuring the application
                 meets business requirements and industry standards.
               </p>
+              <div className="mt-4 gap-2 flex flex-wrap">
+                <Skills list={list} />
+              </div>
             </div>
           </li>
         </ol>
