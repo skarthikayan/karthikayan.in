@@ -8,20 +8,22 @@ function Projects() {
   return (
     <section
       id="projects"
-      className=" flex items-start justify-start flex-col gap-4 mb-20 p-4"
+      className=" flex items-start justify-start flex-col gap-4 mb-20 p-4 lg:p-0"
     >
-      <div className=" lg:hidden w-screen px-6 py-4 sticky top-0 backdrop-blur -mx-7">
+      <div className=" lg:hidden w-[calc(100%-2rem)] px-6 py-4 sticky top-0 backdrop-blur -mx-7">
         <h2>Projects</h2>
       </div>
       <div>
         <ol>
-          <li className="flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20  lg:hover:bg-[#162032] lg:p-4 rounded">
+          <li className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20  lg:hover:bg-[#162032] lg:p-4 rounded cursor-pointer">
             <img
               src={sandbox}
               className="lg:h-24 lg:w-36 h-36 w-52 rounded-sm"
             />
             <div className="flex flex-col items-start justify-start">
-              <h2>Hands-on sandbox provider </h2>
+              <h2 className="group-hover:text-[#5eead4]">
+                Hands-on sandbox provider{" "}
+              </h2>
               <p className="text-left">
                 Developed a web application from scratch, that enables users to
                 access a sandbox environment directly from browser. This reduced
@@ -30,13 +32,15 @@ function Projects() {
               <Skills list={list1} />
             </div>
           </li>
-          <li className="flex lg:flex-row flex-col-reverse items-start justify-start gap-4  lg:hover:bg-[#162032] lg:p-4 rounded">
+          <li className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4  lg:hover:bg-[#162032] lg:p-4 rounded cursor-pointer">
             <img
               src={eLearning}
               className="lg:h-24 lg:w-36 h-36 w-52 rounded-sm"
             />
             <div className="flex flex-col items-start justify-start">
-              <h2>E-learning web application </h2>
+              <h2 className="group-hover:text-[#5eead4]">
+                E-learning web application{" "}
+              </h2>
               <p className="text-left">
                 Developed UI for web and mobile applications that enables users
                 to take courses and assessments. Revamped the legacy code base

@@ -15,7 +15,7 @@ function Header() {
     { name: "Projects", id: "#projects" },
   ];
   return (
-    <header className="lg:sticky lg:top-0 lg:h-screen lg:w-1/2  lg:py-28 py-20 px-4 flex flex-col justify-start items-start z-10">
+    <header className="lg:sticky lg:top-0 lg:h-screen lg:w-1/2  lg:py-28 py-20 px-8 flex flex-col justify-start items-start z-10">
       <h1 className="text-4xl font-semibold">Karthikayan Selvaraj</h1>
       <h2 className="text-xl font-normal mt-3">Senior Software Engineer</h2>
       <p className="text-base italic  mt-3">

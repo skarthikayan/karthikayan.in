@@ -16,17 +16,19 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="flex items-start justify-start flex-col gap-4 mb-20 p-4"
+      className="flex items-start justify-start flex-col gap-4 mb-20  p-4 lg:p-0"
     >
-      <div className="lg:hidden w-screen px-6 py-4 sticky top-0 backdrop-blur -mx-7">
+      <div className="lg:hidden w-[calc(100%-2rem)] px-6 py-4 sticky top-0 backdrop-blur -mx-7">
         <h2>Experience</h2>
       </div>
       <div>
         <ol>
-          <li className="flex lg:flex-row flex-col items-start justify-start gap-4 lg:hover:bg-[#162032] lg:p-4 rounded">
+          <li className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:hover:bg-[#162032] lg:p-4 rounded cursor-pointer">
             <span className="text-s  text-[#94a3b8]">2016 - Present</span>
             <div className="flex flex-col items-start justify-start">
-              <h2>Tata Consultancy Services</h2>
+              <h2 className="group-hover:text-[#5eead4]">
+                Tata Consultancy Services
+              </h2>
               <p className="text-left mt-2">
                 Responsible for design, development and maintenance of React.js
                 and Node.js web applications. Accountable for making strategic
