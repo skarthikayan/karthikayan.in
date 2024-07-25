@@ -25,8 +25,8 @@
 
 @layer component {
   .mover {
-    width: 40rem;
-    height: 40rem;
+    width: 60rem;
+    height: 60rem;
     border-radius: 50%;
     background: radial-gradient(#ffffff15 0%, transparent 50%);
     position: fixed;

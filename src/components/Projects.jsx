@@ -8,12 +8,18 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="flex items-start justify-start flex-col gap-4 mb-20"
+      className=" flex items-start justify-start flex-col gap-4 mb-20 p-4"
     >
+      <div className=" lg:hidden w-screen px-6 py-4 sticky top-0 backdrop-blur -mx-7">
+        <h2>Projects</h2>
+      </div>
       <div>
         <ol>
-          <li className="flex flex-row items-start justify-start gap-4 mb-20  hover:bg-[#162032] p-4 rounded">
-            <img src={sandbox} className="h-24 w-36 rounded-sm" />
+          <li className="flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20  lg:hover:bg-[#162032] lg:p-4 rounded">
+            <img
+              src={sandbox}
+              className="lg:h-24 lg:w-36 h-36 w-52 rounded-sm"
+            />
             <div className="flex flex-col items-start justify-start">
               <h2>Hands-on sandbox provider </h2>
               <p className="text-left">
@@ -24,8 +30,11 @@ function Projects() {
               <Skills list={list1} />
             </div>
           </li>
-          <li className="flex flex-row items-start justify-start gap-4  hover:bg-[#162032] p-4 rounded">
-            <img src={eLearning} className="h-24 w-36 rounded-sm" />
+          <li className="flex lg:flex-row flex-col-reverse items-start justify-start gap-4  lg:hover:bg-[#162032] lg:p-4 rounded">
+            <img
+              src={eLearning}
+              className="lg:h-24 lg:w-36 h-36 w-52 rounded-sm"
+            />
             <div className="flex flex-col items-start justify-start">
               <h2>E-learning web application </h2>
               <p className="text-left">
