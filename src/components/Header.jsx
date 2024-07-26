@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { useState } from "react";
 
 import GithubIcon from "../assets/githubIcon.svg?react";
 import InstagramIcon from "../assets/instagram.svg?react";
@@ -24,13 +23,15 @@ function Header({ activeSection }) {
     { icon: <TwiterIcon />, link: "https://x.com/imkarthikayan" },
     { icon: <InstagramIcon />, link: "https://instagram.com/karthikayan.s" },
   ];
+
+  const name = "Karthikayan Selvaraj";
+  const title = "Senior Software Engineer";
+  const quote = "Code is like humour. When you have to explain, it's bad!";
   return (
-    <header className="lg:sticky lg:top-0 lg:h-screen lg:w-1/2  lg:py-28 py-20 px-10 flex flex-col justify-start items-start z-10">
-      <h1 className="text-4xl font-semibold">Karthikayan Selvaraj</h1>
-      <h2 className="text-xl font-normal mt-3">Senior Software Engineer</h2>
-      <p className="text-base italic  mt-3">
-        "Code is like humour. When you have to explain, it's bad!"
-      </p>
+    <>
+      <h1 className="text-4xl font-semibold">{name}</h1>
+      <h2 className="text-xl font-normal mt-3">{title}</h2>
+      <p className="text-base italic  mt-3">{quote}</p>
       <div className="flex justify-center items-center gap-4 mt-3">
         {externalLinks.map((externalLink) => (
           <a target="_blank" href={externalLink.link}>
@@ -52,7 +53,7 @@ function Header({ activeSection }) {
           </a>
         ))}
       </nav>
-    </header>
+    </>
   );
 }
 
