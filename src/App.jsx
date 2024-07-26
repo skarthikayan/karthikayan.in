@@ -1,11 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 
-import Header from "./components/Header";
+import Title from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 
-import "./App.css";
 function App() {
   let root = document.documentElement;
   root.addEventListener("mousemove", (e) => {
@@ -25,7 +24,7 @@ function App() {
           setActiveSection(visibleSection.id);
         }
       },
-      { rootMargin: "-300px" }
+      { rootMargin: "-400px" }
     );
 
     const sections = document.querySelectorAll("section");
@@ -42,8 +41,10 @@ function App() {
   return (
     <div className="flex flex-col lg:flex-row mx-auto min-h-screen max-w-screen-xl lg:px-24">
       <div className="mover" />
-      <Header activeSection={activeSection} />
-      <main className="lg:w-1/2 lg:py-24 py:12 z-10 px-8">
+      <header className="lg:sticky lg:top-0 lg:h-screen lg:w-1/2  lg:py-28 py-20 px-8 flex flex-col justify-start items-start z-10">
+        <Title activeSection={activeSection} />
+      </header>
+      <main className="lg:w-1/2 lg:py-24 py:12 z-10 px-6">
         <About />
         <Experience />
         <Projects />
