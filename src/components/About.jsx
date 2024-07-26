@@ -4,7 +4,7 @@ function About() {
       id="about"
       className="flex items-start justify-start flex-col gap-4 mb-20 p-4"
     >
-      <div className="lg:hidden w-[calc(100%-2rem)] w-screen px-6 py-4 sticky top-0 backdrop-blur -mx-7">
+      <div className="lg:hidden w-[calc(100vw-4rem)] px-6 py-4 sticky top-0 backdrop-blur -mx-7">
         <h2>About</h2>
       </div>
       <p className="text-left">
