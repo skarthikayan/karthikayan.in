@@ -40,10 +40,10 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row mx-auto min-h-screen max-w-screen-xl lg:px-24 p-4">
+    <div className="flex flex-col lg:flex-row mx-auto min-h-screen max-w-screen-xl lg:px-24">
       <div className="mover" />
       <Header activeSection={activeSection} />
-      <main className="lg:w-1/2 lg:py-24 py:12 z-10 px-4">
+      <main className="lg:w-1/2 lg:py-24 py:12 z-10 px-8">
         <About />
         <Experience />
         <Projects />
