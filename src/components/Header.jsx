@@ -7,12 +7,22 @@ import LinkedInIcon from "../assets/linkedin.svg?react";
 import TwiterIcon from "../assets/twitter.svg?react";
 import MailIcon from "../assets/mail.svg?react";
 
-function Header() {
-  const [activeTab, setActiveTab] = useState("#about");
+function Header({ activeSection }) {
   const navItems = [
-    { name: "About", id: "#about" },
-    { name: "Work Experience", id: "#experience" },
-    { name: "Projects", id: "#projects" },
+    { name: "ABOUT", id: "about" },
+    { name: "WORK EXPERIENCE", id: "experience" },
+    { name: "PROJECTS", id: "projects" },
+  ];
+
+  const externalLinks = [
+    { icon: <MailIcon />, link: "mailto:skarthikayan7@gmail.com" },
+    { icon: <GithubIcon />, link: "https://github.com/skarthikayan" },
+    {
+      icon: <LinkedInIcon />,
+      link: "https://www.linkedin.com/in/karthikayan-s",
+    },
+    { icon: <TwiterIcon />, link: "https://x.com/imkarthikayan" },
+    { icon: <InstagramIcon />, link: "https://instagram.com/karthikayan.s" },
   ];
   return (
     <header className="lg:sticky lg:top-0 lg:h-screen lg:w-1/2  lg:py-28 py-20 px-8 flex flex-col justify-start items-start z-10">
@@ -22,21 +32,20 @@ function Header() {
         "Code is like humour. When you have to explain, it's bad!"
       </p>
       <div className="flex justify-center items-center gap-4 mt-3">
-        <MailIcon />
-        <GithubIcon />
-        <LinkedInIcon />
-        <TwiterIcon />
-        <InstagramIcon />
+        {externalLinks.map((externalLink) => (
+          <a target="_blank" href={externalLink.link}>
+            {externalLink.icon}
+          </a>
+        ))}
       </div>
       <nav className="hidden lg:flex flex-col justify-center items-start mt-6 gap-4 min-h-[50vh] ">
         {navItems.map((item) => (
           <a
             key={item.id}
-            href={item.id}
-            onClick={() => setActiveTab(item.id)}
+            href={`#${item.id}`}
             className={clsx(
               "hover:border-b hover:border-white hover:text-white cursor-pointer",
-              activeTab === item.id && "border-b border-white text-white"
+              activeSection === item.id && "border-b border-white text-white"
             )}
           >
             {item.name}
