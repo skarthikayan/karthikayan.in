@@ -28,16 +28,21 @@ function Experience() {
       id="experience"
       className="flex items-start justify-start flex-col gap-4 mb-20  p-4 lg:p-0"
     >
-      <div className="lg:hidden w-[calc(100vw-1rem)] px-6 py-4 sticky top-0 backdrop-blur -mx-7">
-        <h2 className="font-bold">EXPERIENCE</h2>
+      <div className="lg:hidden w-[calc(100vw-1rem)] px-6 py-4 sticky top-0 backdrop-blur -ml-6">
+        <h2 className="font-bold text-textTitle">EXPERIENCE</h2>
       </div>
       <div>
         <ol>
           {companies.map((company) => (
-            <li className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:hover:bg-[#162032] lg:p-4 rounded cursor-pointer">
-              <span className="text-s  text-[#94a3b8]">{company.period}</span>
+            <li
+              key={company.name}
+              className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:hover:glass lg:p-4 rounded cursor-pointer"
+            >
+              <span className="text-s">{company.period}</span>
               <div className="flex flex-col items-start justify-start">
-                <h2 className="group-hover:text-[#5eead4]">{company.name}</h2>
+                <h2 className="group-hover:text-sectionTitle text-textTitle">
+                  {company.name}
+                </h2>
                 <p className="text-left mt-2">{company.description}</p>
                 <div className="mt-4 gap-2 flex flex-wrap">
                   <Tags list={company.skills} />
@@ -48,8 +53,9 @@ function Experience() {
         </ol>
       </div>
       <a
-        className="p-1 flex text-[#ffffff] cursor-pointer"
+        className="p-1 flex text-textTitle cursor-pointer"
         download="karthikayan_selvaraj"
+        target="_blank"
         href={import.meta.env.BASE_URL + "/resume.pdf"}
       >
         <DownlaodIcon /> <span className="ml-3">Résumé</span>

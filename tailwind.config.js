@@ -1,16 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["Poppins"],
+      colors: {
+        primary: "var(--color-primary)",
+        tags: "var(--color-tags)",
+        textTags: "var(--color-text-tags)",
+        textPrimary: "var(--color-text-primary)",
+        textTitle: "var(--color-text-title)",
+        sectionTitle: "var(--color-text-section-title)",
       },
     },
   },
   plugins: [],
-}
-
+};
