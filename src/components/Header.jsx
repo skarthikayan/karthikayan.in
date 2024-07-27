@@ -26,15 +26,15 @@ function Header({ activeSection }) {
 
   const name = "Karthikayan Selvaraj";
   const title = "Senior Software Engineer";
-  const quote = "Code is like humour. When you have to explain, it's bad!";
+  const quote = "Code is like humour. When you have to explain it, it's bad!";
   return (
     <>
-      <h1 className="text-4xl font-semibold">{name}</h1>
-      <h2 className="text-xl font-normal mt-3">{title}</h2>
+      <h1 className="text-4xl font-semibold text-textTitle">{name}</h1>
+      <h2 className="text-xl font-normal mt-3 text-textTitle">{title}</h2>
       <p className="text-base italic  mt-3">{quote}</p>
       <div className="flex justify-center items-center gap-4 mt-3">
         {externalLinks.map((externalLink) => (
-          <a target="_blank" href={externalLink.link}>
+          <a key={externalLink.link} target="_blank" href={externalLink.link}>
             {externalLink.icon}
           </a>
         ))}
@@ -45,8 +45,9 @@ function Header({ activeSection }) {
             key={item.id}
             href={`#${item.id}`}
             className={clsx(
-              "hover:border-b hover:border-white hover:text-white cursor-pointer",
-              activeSection === item.id && "border-b border-white text-white"
+              "hover:border-b hover:border-textTitle hover:text-textTitle cursor-pointer",
+              activeSection === item.id &&
+                "border-b border-textTitle text-textTitle"
             )}
           >
             {item.name}
