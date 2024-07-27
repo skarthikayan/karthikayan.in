@@ -1,4 +1,5 @@
 import Tags from "./Tags";
+import DownlaodIcon from "../assets/download.svg?react";
 
 function Experience() {
   const companies = [
@@ -28,7 +29,7 @@ function Experience() {
       className="flex items-start justify-start flex-col gap-4 mb-20  p-4 lg:p-0"
     >
       <div className="lg:hidden w-[calc(100vw-1rem)] px-6 py-4 sticky top-0 backdrop-blur -mx-7">
-        <h2>EXPERIENCE</h2>
+        <h2 className="font-bold">EXPERIENCE</h2>
       </div>
       <div>
         <ol>
@@ -46,6 +47,13 @@ function Experience() {
           ))}
         </ol>
       </div>
+      <a
+        className="p-1 flex text-[#ffffff] cursor-pointer"
+        download="karthikayan_selvaraj"
+        href={import.meta.env.BASE_URL + "/resume.pdf"}
+      >
+        <DownlaodIcon /> <span className="ml-3">Résumé</span>
+      </a>
     </section>
   );
 }
