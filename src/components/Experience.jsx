@@ -36,7 +36,7 @@ function Experience() {
           {companies.map((company) => (
             <li
               key={company.name}
-              className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:hover:glass lg:p-4 rounded cursor-pointer"
+              className="group flex lg:flex-row flex-col items-start justify-start gap-4  hover:border hover:border-tags  lg:p-4 rounded cursor-pointer"
             >
               <span className="text-s">{company.period}</span>
               <div className="flex flex-col items-start justify-start">

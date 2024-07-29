@@ -8,38 +8,31 @@
     font-style: normal;
     font-weight: 400;
     src: url("/fonts/Poppins-Regular.ttf");
+    font-display: swap;
   }
   @font-face {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     src: url("/fonts/Poppins-SemiBold.ttf");
+    font-display: swap;
   }
   @font-face {
     font-family: Poppins;
     font-style: italic;
     font-weight: 400;
     src: url("/fonts/Poppins-Italic.ttf");
+    font-display: swap;
   }
 
   html {
     --color-primary: #090925;
     --color-tags: #7af0ff;
     --color-text-tags: #141e37;
-    --color-text-primary: #6d6f93;
+    --color-text-primary: #999ab2;
     --color-text-title: #ffffff;
     --color-text-section-title: #93f2ff;
     scroll-behavior: smooth;
-  }
-}
-
-@layer utilities {
-  .glass {
-    background: rgba(255, 255, 255, 0.04);
-    border-radius: 0.4 rem;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.13);
   }
 }
 
@@ -49,7 +42,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Poppins, sans-serif, Arial, Helvetica, sans-serif;
+  font-family: Poppins, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;

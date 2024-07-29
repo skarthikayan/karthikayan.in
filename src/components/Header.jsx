@@ -15,7 +15,10 @@ function Header({ activeSection }) {
 
   const externalLinks = [
     { icon: <MailIcon />, link: "mailto:skarthikayan7@gmail.com" },
-    { icon: <GithubIcon />, link: "https://github.com/skarthikayan" },
+    {
+      icon: <GithubIcon />,
+      link: "https://github.com/skarthikayan",
+    },
     {
       icon: <LinkedInIcon />,
       link: "https://www.linkedin.com/in/karthikayan-s",
@@ -45,9 +48,9 @@ function Header({ activeSection }) {
             key={item.id}
             href={`#${item.id}`}
             className={clsx(
-              "hover:border-b hover:border-textTitle hover:text-textTitle cursor-pointer",
+              "cursor-pointer hover:border-b hover:border-textTitle hover:text-textTitle hover:transition-all hover:tracking-[.20em]	",
               activeSection === item.id &&
-                "border-b border-textTitle text-textTitle"
+                "border-b border-textTitle text-textTitle tracking-[.20em] transition-all"
             )}
           >
             {item.name}

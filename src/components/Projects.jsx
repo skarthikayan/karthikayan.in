@@ -33,7 +33,7 @@ function Projects() {
           {projects.map((project) => (
             <li
               key={project.name}
-              className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20  lg:hover:glass lg:p-4 rounded cursor-pointer"
+              className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20  hover:border hover:border-tags  lg:p-4 rounded cursor-pointer"
             >
               <img
                 alt={project.name}
