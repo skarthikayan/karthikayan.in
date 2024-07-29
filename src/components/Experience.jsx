@@ -36,7 +36,7 @@ function Experience() {
           {companies.map((company) => (
             <li
               key={company.name}
-              className="group flex lg:flex-row flex-col items-start justify-start gap-4  hover:border hover:border-tags  lg:p-4 rounded cursor-pointer"
+              className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:p-4 rounded-lg cursor-pointer lg:hover:bg-white/10"
             >
               <span className="text-s">{company.period}</span>
               <div className="flex flex-col items-start justify-start">
@@ -56,6 +56,7 @@ function Experience() {
         className="p-1 flex text-textTitle cursor-pointer"
         download="karthikayan_selvaraj"
         target="_blank"
+        aria-label="Download Resume"
         href={import.meta.env.BASE_URL + "/resume.pdf"}
       >
         <DownlaodIcon /> <span className="ml-3">Résumé</span>
