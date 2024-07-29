@@ -33,12 +33,16 @@ function Projects() {
           {projects.map((project) => (
             <li
               key={project.name}
-              className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20  hover:border hover:border-tags  lg:p-4 rounded cursor-pointer"
+              className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20 lg:p-4 lg:hover:bg-white/10 rounded-lg cursor-pointer"
             >
               <img
                 alt={project.name}
                 src={project.icon}
-                className="lg:h-24 lg:w-36 h-36 w-52 rounded-sm"
+                height={200}
+                width={300}
+                loading="lazy"
+                decoding="async"
+                className="lg:w-36 w-52 object-contain rounded-sm"
               />
               <div className="flex flex-col items-start justify-start">
                 <h2 className="group-hover:text-sectionTitle text-textTitle">

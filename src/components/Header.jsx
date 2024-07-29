@@ -3,7 +3,7 @@ import clsx from "clsx";
 import GithubIcon from "../assets/githubIcon.svg?react";
 import InstagramIcon from "../assets/instagram.svg?react";
 import LinkedInIcon from "../assets/linkedin.svg?react";
-import TwiterIcon from "../assets/twitter.svg?react";
+import TwitterIcon from "../assets/twitter.svg?react";
 import MailIcon from "../assets/mail.svg?react";
 
 function Header({ activeSection }) {
@@ -14,17 +14,31 @@ function Header({ activeSection }) {
   ];
 
   const externalLinks = [
-    { icon: <MailIcon />, link: "mailto:skarthikayan7@gmail.com" },
+    {
+      icon: <MailIcon />,
+      link: "mailto:skarthikayan7@gmail.com",
+      label: "Send e-mail",
+    },
     {
       icon: <GithubIcon />,
       link: "https://github.com/skarthikayan",
+      label: "View github profile",
     },
     {
       icon: <LinkedInIcon />,
       link: "https://www.linkedin.com/in/karthikayan-s",
+      label: "View linkedin profile",
     },
-    { icon: <TwiterIcon />, link: "https://x.com/imkarthikayan" },
-    { icon: <InstagramIcon />, link: "https://instagram.com/karthikayan.s" },
+    {
+      icon: <TwitterIcon />,
+      link: "https://x.com/imkarthikayan",
+      label: "View twitter profile",
+    },
+    {
+      icon: <InstagramIcon />,
+      link: "https://instagram.com/karthikayan.s",
+      label: "View instagram profile",
+    },
   ];
 
   const name = "Karthikayan Selvaraj";
@@ -37,7 +51,12 @@ function Header({ activeSection }) {
       <p className="text-base italic  mt-3">{quote}</p>
       <div className="flex justify-center items-center gap-4 mt-3">
         {externalLinks.map((externalLink) => (
-          <a key={externalLink.link} target="_blank" href={externalLink.link}>
+          <a
+            key={externalLink.link}
+            target="_blank"
+            href={externalLink.link}
+            aria-label={externalLink.label}
+          >
             {externalLink.icon}
           </a>
         ))}
