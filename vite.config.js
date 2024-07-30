@@ -8,10 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     svgr({
-      svgrOptions: {},
-      esbuildOptions: {},
       include: "**/*.svg?react",
-      exclude: "",
     }),
   ],
 });
