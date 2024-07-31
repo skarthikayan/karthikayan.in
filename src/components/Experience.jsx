@@ -57,7 +57,7 @@ function Experience() {
         download="karthikayan_selvaraj"
         target="_blank"
         aria-label="Download Resume"
-        href={import.meta.env.BASE_URL + "/resume.pdf"}
+        href="/resume.pdf"
       >
         <DownlaodIcon /> <span className="ml-3">Résumé</span>
       </a>
