@@ -5,6 +5,7 @@ import Title from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import PersonalProjects from "./components/PersonalProjects";
 
 function App() {
   let root = document.documentElement;
@@ -59,6 +60,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <PersonalProjects />
       </motion.main>
     </div>
   );

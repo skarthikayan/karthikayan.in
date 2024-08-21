@@ -8,14 +8,14 @@ function Projects() {
     {
       name: "Hands-on sandbox provider",
       description:
-        "Developed a web application from scratch, that enables users to access a sandbox environment directly from browser. This reduced the dependency on third party vendors, saving 40% for the cost incurred",
+        "A web application, that enables users to access a sandbox environment directly from browser. This reduced the dependency on third party vendors, saving significant percentage of the cost incurred. I worked on creating APIs, UI and Docker Images of sandboxes for the application.",
       icon: sandbox,
       skills: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Docker"],
     },
     {
       name: "E-learning web application",
       description:
-        "Developed UI for web and mobile applications that enables users to take courses and assessments. Revamped the legacy code base to latest react version which improved the application performance.",
+        "A web applications that enables users to take online courses and assessments. I revamped the legacy UI code base to latest react version which improved the application performance",
       icon: eLearning,
       skills: ["React.js", "React Native", "HTML", "CSS"],
     },
@@ -26,7 +26,7 @@ function Projects() {
       className=" flex items-start justify-start flex-col gap-4 mb-20 p-4 lg:p-0"
     >
       <div className="lg:hidden w-[calc(100vw-1rem)] px-6 py-4 sticky top-0 backdrop-blur -ml-6">
-        <h2 className="font-bold text-textTitle">PROJECTS</h2>
+        <h2 className="font-bold text-textTitle">WORK PROJECTS</h2>
       </div>
       <div>
         <ol>
