@@ -10,7 +10,8 @@ function Header({ activeSection }) {
   const navItems = [
     { name: "ABOUT", id: "about" },
     { name: "WORK EXPERIENCE", id: "experience" },
-    { name: "PROJECTS", id: "projects" },
+    { name: "WORK PROJECTS", id: "projects" },
+    { name: "PERSONAL PROJECTS", id: "personal-projects" },
   ];
 
   const externalLinks = [
@@ -34,11 +35,11 @@ function Header({ activeSection }) {
       link: "https://x.com/imkarthikayan",
       label: "View twitter profile",
     },
-    {
-      icon: <InstagramIcon />,
-      link: "https://instagram.com/karthikayan.s",
-      label: "View instagram profile",
-    },
+    // {
+    //   icon: <InstagramIcon />,
+    //   link: "https://instagram.com/karthikayan.s",
+    //   label: "View instagram profile",
+    // },
   ];
 
   const name = "Karthikayan Selvaraj";
