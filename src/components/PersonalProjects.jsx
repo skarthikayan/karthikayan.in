@@ -1,5 +1,6 @@
 import triptreasure from "../assets/triptreasure.png";
 import portfolio from "../assets/portfolio.png";
+import agileplusApi from "../assets/agileplus-api.png";
 
 import DemoIcon from "../assets/demo.svg?react";
 import SourceCode from "../assets/source-code.svg?react";
@@ -10,11 +11,27 @@ function PersonalProjects() {
   const projects = [
     {
       name: "Trip Treasure",
-      description: "A website for booking tours and travels all around world.",
+      description:
+        "Frontend - A website for booking tours and travels all around world.",
       icon: triptreasure,
       skills: ["React.js", "Typescript", "Tailwindcss", "HTML", "Vite"],
       sourceCode: "https://github.com/skarthikayan/triptreasure",
       demo: "https://skarthikayan.github.io/triptreasure/",
+    },
+    {
+      name: "Agile Plus",
+      description:
+        "Backend - A web application for intuitive and simple project management. It helps to plan, track and manages a team's workflow effectively.",
+      icon: agileplusApi,
+      skills: [
+        "Node.js",
+        "Express.js",
+        "Typescript",
+        "Posgres SQL",
+        "Zod",
+        "Prisma ORM",
+      ],
+      sourceCode: "https://github.com/skarthikayan/agileplus",
     },
     {
       name: "My Portfolio",
