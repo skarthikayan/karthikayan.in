@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import triptreasure from "../assets/triptreasure.png";
 import portfolio from "../assets/portfolio.png";
 import agileplusApi from "../assets/agileplus-api.png";
@@ -53,7 +54,10 @@ function PersonalProjects() {
       <div>
         <ol>
           {projects.map((project) => (
-            <li
+            <motion.li
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ amount: 0.15 }}
               key={project.name}
               className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20 lg:p-4 lg:hover:bg-white/10 rounded-lg cursor-pointer"
             >
@@ -97,7 +101,7 @@ function PersonalProjects() {
                 </div>
                 <Tags list={project.skills} />
               </div>
-            </li>
+            </motion.li>
           ))}
         </ol>
       </div>

@@ -41,7 +41,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row mx-auto min-h-screen max-w-screen-xl lg:px-24">
+    <div className="flex flex-col lg:flex-row mx-auto min-h-screen max-w-screen-xl lg:px-24 overflow-hidden">
       <div className="spotlight" />
       <motion.header
         initial={{ opacity: 0, x: -100 }}

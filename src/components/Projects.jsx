@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import eLearning from "../assets/e-learning.png";
 import sandbox from "../assets/sandbox.png";
 
@@ -31,7 +32,10 @@ function Projects() {
       <div>
         <ol>
           {projects.map((project) => (
-            <li
+            <motion.li
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ amount: 0.15 }}
               key={project.name}
               className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20 lg:p-4 lg:hover:bg-white/10 rounded-lg cursor-pointer"
             >
@@ -51,7 +55,7 @@ function Projects() {
                 <p className="text-left">{project.description}</p>
                 <Tags list={project.skills} />
               </div>
-            </li>
+            </motion.li>
           ))}
         </ol>
       </div>
