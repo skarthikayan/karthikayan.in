@@ -1,5 +1,6 @@
 import Tags from "./Tags";
 import DownlaodIcon from "../assets/download.svg?react";
+import { motion } from "framer-motion";
 
 function Experience() {
   const companies = [
@@ -34,7 +35,10 @@ function Experience() {
       <div>
         <ol>
           {companies.map((company) => (
-            <li
+            <motion.li
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ amount: 0.15 }}
               key={company.name}
               className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:p-4 rounded-lg cursor-pointer lg:hover:bg-white/10"
             >
@@ -48,7 +52,7 @@ function Experience() {
                   <Tags list={company.skills} />
                 </div>
               </div>
-            </li>
+            </motion.li>
           ))}
         </ol>
       </div>
