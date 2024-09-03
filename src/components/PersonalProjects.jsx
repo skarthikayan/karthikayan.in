@@ -12,7 +12,7 @@ function PersonalProjects() {
     {
       name: "Trip Treasure",
       description:
-        "Frontend - A website for booking tours and travels all around world.",
+        "Frontend - A website for booking tours and travels all around world. Site is build using React.js and tailwindcss. It's responsive and works in all screen sizes.",
       icon: triptreasure,
       skills: ["React.js", "Typescript", "Tailwindcss", "HTML", "Vite"],
       sourceCode: "https://github.com/skarthikayan/triptreasure",
@@ -21,7 +21,7 @@ function PersonalProjects() {
     {
       name: "Agile Plus",
       description:
-        "Backend - A web application for intuitive and simple project management. It helps to plan, track and manages a team's workflow effectively.",
+        "Backend - A web application for intuitive and simple project management. It helps to plan, track and manages a team's workflow effectively. It uses Express.js and Prisma ORM.",
       icon: agileplusApi,
       skills: [
         "Node.js",
@@ -35,9 +35,10 @@ function PersonalProjects() {
     },
     {
       name: "My Portfolio",
-      description: "A website to showcase my work and technical skills.",
+      description:
+        "A website to showcase my work and technical skills. It's Build with React.js and SEO optimized.",
       icon: portfolio,
-      skills: ["React.js", "Javascript", "Tailwindcss", "HTML", "Vite"],
+      skills: ["React.js", "Javascript", "Tailwindcss", "HTML", "Vite", "SEO"],
       sourceCode: "https://github.com/skarthikayan/karthikayan.in",
     },
   ];
