@@ -36,9 +36,9 @@ function Experience() {
         <ol>
           {companies.map((company) => (
             <motion.li
-              initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ amount: 0.15 }}
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ amount: 0.15, once: true }}
               key={company.name}
               className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:p-4 rounded-lg cursor-pointer lg:hover:bg-white/10"
             >
