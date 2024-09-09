@@ -57,6 +57,7 @@ function Header({ activeSection }) {
             target="_blank"
             href={externalLink.link}
             aria-label={externalLink.label}
+            className="hover:svg-hightlight"
           >
             {externalLink.icon}
           </a>
@@ -68,7 +69,7 @@ function Header({ activeSection }) {
             key={item.id}
             href={`#${item.id}`}
             className={clsx(
-              "cursor-pointer hover:border-b hover:border-textTitle hover:text-textTitle hover:transition-all hover:tracking-[.20em]	",
+              "cursor-pointer hover:border-b hover:border-textTitle hover:text-textTitle hover:transition-all hover:tracking-[.20em]",
               activeSection === item.id &&
                 "border-b border-textTitle text-textTitle tracking-[.20em] transition-all"
             )}

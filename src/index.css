@@ -36,6 +36,12 @@
   }
 }
 
+@layer utilities {
+  .svg-hightlight > svg {
+    stroke: #fff;
+  }
+}
+
 body {
   margin: 0;
   display: flex;
