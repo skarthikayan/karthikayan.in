@@ -1,7 +1,8 @@
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 import GithubIcon from "../assets/githubIcon.svg?react";
-import InstagramIcon from "../assets/instagram.svg?react";
+// import InstagramIcon from "../assets/instagram.svg?react";
 import LinkedInIcon from "../assets/linkedin.svg?react";
 import TwitterIcon from "../assets/twitter.svg?react";
 import MailIcon from "../assets/mail.svg?react";
@@ -45,14 +46,59 @@ function Header({ activeSection }) {
   const name = "Karthikayan Selvaraj";
   const title = "Senior Software Engineer";
   const quote = "Code is like humour. When you have to explain it, it's bad!";
+  const quoteLetter = Array.from(quote);
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05,
+        delay: 1.5,
+        delayChildren: 1.5,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
   return (
     <>
-      <h1 className="text-4xl font-semibold text-textTitle">{name}</h1>
-      <h2 className="text-xl font-normal mt-3 text-textTitle">{title}</h2>
-      <p className="text-base italic  mt-3">{quote}</p>
+      <motion.h1
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="text-4xl font-semibold text-textTitle"
+      >
+        {name}
+      </motion.h1>
+      <motion.h2
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="text-xl font-normal mt-3 text-textTitle"
+      >
+        {title}
+      </motion.h2>
+      <motion.p
+        className="text-base italic  mt-3"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        {quoteLetter.map((letter, index) => (
+          <motion.span key={letter + index} variants={item}>
+            {letter}
+          </motion.span>
+        ))}
+      </motion.p>
       <div className="flex justify-center items-center gap-4 mt-3">
         {externalLinks.map((externalLink) => (
-          <a
+          <motion.a
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1 }}
             key={externalLink.link}
             target="_blank"
             href={externalLink.link}
@@ -60,7 +106,7 @@ function Header({ activeSection }) {
             className="hover:svg-hightlight"
           >
             {externalLink.icon}
-          </a>
+          </motion.a>
         ))}
       </div>
       <nav className="hidden lg:flex flex-col justify-center items-start mt-6 gap-4 min-h-[50vh] ">

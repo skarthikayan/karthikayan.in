@@ -14,6 +14,8 @@ function Experience() {
         "Node.js",
         "Javascript",
         "React Native",
+        "Jest",
+        "React Testing Library",
         "Expres.js",
         "PostgreSQL",
         "HTML",
