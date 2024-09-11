@@ -15,7 +15,14 @@ function PersonalProjects() {
       description:
         "Frontend - A website for booking tours and travels all around world. Site is build using React.js and tailwindcss. It's responsive and works in all screen sizes.",
       icon: triptreasure,
-      skills: ["React.js", "Typescript", "Tailwindcss", "HTML", "Vite"],
+      skills: [
+        "React.js",
+        "Typescript",
+        "Tailwindcss",
+        "HTML",
+        "Vite",
+        "React Testing Library",
+      ],
       sourceCode: "https://github.com/skarthikayan/triptreasure",
       demo: "https://skarthikayan.github.io/triptreasure/",
     },
@@ -31,15 +38,24 @@ function PersonalProjects() {
         "Posgres SQL",
         "Zod",
         "Prisma ORM",
+        "Jest",
       ],
       sourceCode: "https://github.com/skarthikayan/agileplus",
     },
     {
       name: "My Portfolio",
       description:
-        "A website to showcase my work and technical skills. It's Build with React.js and SEO optimized.",
+        "A website to showcase my work and technical skills. It's Build with React.js and Search Engine Optimized.",
       icon: portfolio,
-      skills: ["React.js", "Javascript", "Tailwindcss", "HTML", "Vite", "SEO"],
+      skills: [
+        "React.js",
+        "Javascript",
+        "Tailwindcss",
+        "HTML",
+        "Vite",
+        "React Testing Library",
+        "SEO",
+      ],
       sourceCode: "https://github.com/skarthikayan/karthikayan.in",
     },
   ];

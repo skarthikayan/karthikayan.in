@@ -43,25 +43,15 @@ function App() {
   return (
     <div className="flex flex-col lg:flex-row mx-auto min-h-screen max-w-screen-xl lg:px-24">
       <div className="spotlight" />
-      <motion.header
-        initial={{ y: 30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.3 }}
-        className="lg:sticky lg:top-0 lg:h-screen lg:w-1/2  lg:py-28 py-20 px-8 flex flex-col justify-start items-start z-10"
-      >
+      <header className="lg:sticky lg:top-0 lg:h-screen lg:w-1/2  lg:py-28 py-20 px-8 flex flex-col justify-start items-start z-10">
         <Title activeSection={activeSection} />
-      </motion.header>
-      <motion.main
-        initial={{ y: 30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.3 }}
-        className="lg:w-1/2 lg:py-24 py:12 z-10 px-6"
-      >
+      </header>
+      <main className="lg:w-1/2 lg:py-24 py:12 z-10 px-6">
         <About />
         <Experience />
         <Projects />
         <PersonalProjects />
-      </motion.main>
+      </main>
     </div>
   );
 }

@@ -1,6 +1,21 @@
+import { motion } from "framer-motion";
 function About() {
+  function getExperience() {
+    const doj = new Date("10 November 2016");
+    const totalYears = new Date().getYear() - doj.getYear() + 1;
+    const totalMonths = totalYears * 12;
+    const differenceMonthsDOJ = doj.getMonth();
+    const differenceMonthsCurrentYear = 12 - new Date().getMonth();
+    const actualMonths =
+      totalMonths - differenceMonthsCurrentYear - differenceMonthsDOJ;
+
+    return (actualMonths / 12).toFixed(2);
+  }
   return (
-    <section
+    <motion.section
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
       id="about"
       className="flex items-start justify-start flex-col gap-4 mb-20 p-4"
     >
@@ -10,7 +25,8 @@ function About() {
       <p className="text-left">
         As a Senior Software Engineer with over{" "}
         <span className="text-textTitle">
-          7.8 years of hands-on experience in React.js and Node.js,
+          {getExperience()} years of hands-on experience in React.js and
+          Node.js,
         </span>{" "}
         I'm passionate about pushing the boundaries of technology. I thrive on
         <span className="text-textTitle"> solving complex problems </span> and
@@ -27,7 +43,7 @@ function About() {
         for cutting-edge technologies to drive innovation and
         <span className="text-textTitle"> deliver impactful solutions.</span>
       </p>
-    </section>
+    </motion.section>
   );
 }
 
