@@ -38,7 +38,7 @@ function App() {
         observer.current.unobserve(section);
       });
     };
-  }, []);
+  });
 
   return (
     <div className="flex flex-col lg:flex-row mx-auto min-h-screen max-w-screen-xl lg:px-24">
