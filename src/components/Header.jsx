@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 import GithubIcon from "../assets/githubIcon.svg?react";
 // import InstagramIcon from "../assets/instagram.svg?react";
@@ -8,6 +9,7 @@ import TwitterIcon from "../assets/twitter.svg?react";
 import MailIcon from "../assets/mail.svg?react";
 
 function Header({ activeSection }) {
+  const [randomNum] = useState(Math.floor(Math.random() * 4));
   const navItems = [
     { name: "ABOUT", id: "about" },
     { name: "WORK EXPERIENCE", id: "experience" },
@@ -45,8 +47,13 @@ function Header({ activeSection }) {
 
   const name = "Karthikayan Selvaraj";
   const title = "Senior Software Engineer";
-  const quote = "Code is like humour. When you have to explain it, it's bad!";
-  const quoteLetter = Array.from(quote);
+  const quotes = [
+    "First, solve the problem. Then, write the code.",
+    "The best error message is the one that never shows up.",
+    "Make it work, make it right, make it fast.",
+    "A good code is its own best documentation.",
+  ];
+  const quoteLetter = Array.from(quotes[randomNum]);
   const container = {
     hidden: { opacity: 0 },
     show: {
