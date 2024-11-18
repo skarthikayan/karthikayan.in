@@ -13,7 +13,6 @@ function Experience() {
         "React.js",
         "Node.js",
         "Javascript",
-        "React Native",
         "Jest",
         "React Testing Library",
         "Expres.js",
