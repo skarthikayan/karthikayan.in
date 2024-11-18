@@ -25,14 +25,7 @@ function Projects() {
       description:
         "A web applications that enables users to take online courses and assessments. I revamped the legacy UI code base to latest react version which improved the application performance",
       icon: eLearning,
-      skills: [
-        "React.js",
-        "React Native",
-        "Jest",
-        "React Testing Library",
-        "HTML",
-        "CSS",
-      ],
+      skills: ["React.js", "Jest", "React Testing Library", "HTML", "CSS"],
     },
   ];
   return (
