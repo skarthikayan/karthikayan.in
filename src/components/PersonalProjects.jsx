@@ -38,9 +38,13 @@ function PersonalProjects() {
         "Posgres SQL",
         "Zod",
         "Prisma ORM",
+        "JWT",
+        "Middleware",
         "Jest",
       ],
       sourceCode: "https://github.com/skarthikayan/agileplus",
+      apiDocs:
+        "https://petstore.swagger.io/?url=https://raw.githubusercontent.com/skarthikayan/agileplus/refs/heads/main/openapi.json",
     },
     {
       name: "My Portfolio",
@@ -101,6 +105,17 @@ function PersonalProjects() {
                     >
                       <DemoIcon />
                       <p>Demo</p>
+                    </a>
+                  )}
+                  {project.apiDocs && (
+                    <a
+                      target="_blank"
+                      href={project.apiDocs}
+                      aria-label="API Doc"
+                      className="flex gap-4 my-4 hover:text-tags"
+                    >
+                      <DemoIcon />
+                      <p>API Doc</p>
                     </a>
                   )}
                   {project.sourceCode && (
