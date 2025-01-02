@@ -40,6 +40,10 @@
   .svg-hightlight > svg {
     stroke: #fff;
   }
+  .shadow-effect {
+    background: var(--color-primary);
+    box-shadow: 0 8px 32px 0 #151555;
+  }
 }
 
 body {

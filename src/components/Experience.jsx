@@ -1,5 +1,4 @@
 import Tags from "./Tags";
-import DownlaodIcon from "../assets/download.svg?react";
 import { motion } from "framer-motion";
 
 function Experience() {
@@ -10,17 +9,9 @@ function Experience() {
       description:
         "Responsible for design, development and maintenance of React.js and Node.js web applications. Accountable for making strategic decisions regarding application architecture, technology stack, security and development practices, ensuring the application meets business requirements and industry standards.",
       skills: [
-        "React.js",
-        "Node.js",
-        "Javascript",
-        "Jest",
-        "React Testing Library",
-        "Expres.js",
-        "PostgreSQL",
-        "HTML",
-        "CSS",
-        "Docker",
-        "Git",
+        "Technical Lead 2023-2025",
+        "Senior Developer 2020-2023",
+        "Junior Developer 2016-2020",
       ],
     },
   ];
@@ -28,7 +19,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="flex items-start justify-start flex-col gap-4 mb-20  p-4 lg:p-0"
+      className="flex items-start justify-start flex-col gap-4 mb-16 p-4 lg:p-0"
     >
       <div className="lg:hidden w-[calc(100vw-1rem)] px-6 py-4 sticky top-0 backdrop-blur -ml-6">
         <h2 className="font-bold text-textTitle">EXPERIENCE</h2>
@@ -41,7 +32,7 @@ function Experience() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ amount: 0.15, once: true }}
               key={company.name}
-              className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:p-4 rounded-lg cursor-pointer lg:hover:bg-white/10"
+              className="group flex lg:flex-row flex-col items-start justify-start gap-4 lg:p-4 rounded-lg lg:hover:shadow-effect"
             >
               <span className="text-s">{company.period}</span>
               <div className="flex flex-col items-start justify-start">
@@ -57,15 +48,6 @@ function Experience() {
           ))}
         </ol>
       </div>
-      <a
-        className="p-1 flex text-textTitle cursor-pointer"
-        download="karthikayan_selvaraj"
-        target="_blank"
-        aria-label="Download Resume"
-        href="/resume.pdf"
-      >
-        <DownlaodIcon /> <span className="ml-3">Résumé</span>
-      </a>
     </section>
   );
 }

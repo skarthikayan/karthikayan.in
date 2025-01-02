@@ -31,7 +31,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className=" flex items-start justify-start flex-col gap-4 mb-20 p-4 lg:p-0"
+      className=" flex items-start justify-start flex-col gap-4 p-4 lg:p-0 mb-4"
     >
       <div className="lg:hidden w-[calc(100vw-1rem)] px-6 py-4 sticky top-0 backdrop-blur -ml-6">
         <h2 className="font-bold text-textTitle">WORK PROJECTS</h2>
@@ -44,7 +44,7 @@ function Projects() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ amount: 0.15, once: true }}
               key={project.name}
-              className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-20 lg:p-4 lg:hover:bg-white/10 rounded-lg cursor-pointer"
+              className="group flex lg:flex-row flex-col-reverse items-start justify-start gap-4 mb-12 lg:p-4 lg:hover:shadow-effect rounded-lg"
             >
               <img
                 alt={project.name}
