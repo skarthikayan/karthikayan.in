@@ -7,12 +7,13 @@ import Tags from "./Tags";
 function Projects() {
   const projects = [
     {
-      name: "Hands-on sandbox provider",
+      name: "Online Coding Platform",
       description:
-        "A web application, that enables users to access a sandbox environment directly from browser. This reduced the dependency on third party vendors, saving significant percentage of the cost incurred. I worked on creating APIs, UI and Docker Images of sandboxes for the application.",
+        "A web application, that enables users to access a coding environment directly from browser. This reduced the dependency on third party vendors, saving significant percentage of the cost incurred. I worked on creating APIs, UI and Docker Images of sandboxes for the application.",
       icon: sandbox,
       skills: [
         "React.js",
+        "Tailwindcss",
         "Node.js",
         "Express.js",
         "Jest",
@@ -21,11 +22,19 @@ function Projects() {
       ],
     },
     {
-      name: "E-learning web application",
+      name: "Online Learning Platform",
       description:
         "A web applications that enables users to take online courses and assessments. I revamped the legacy UI code base to latest react version which improved the application performance",
       icon: eLearning,
-      skills: ["React.js", "Jest", "React Testing Library", "HTML", "CSS"],
+      skills: [
+        "React.js",
+        "Redux",
+        "Webpack",
+        "HTML",
+        "Jest",
+        "React Testing Library",
+        "Styled Components",
+      ],
     },
   ];
   return (
