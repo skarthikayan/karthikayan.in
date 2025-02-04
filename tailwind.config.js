@@ -10,6 +10,7 @@ export default {
         textPrimary: "var(--color-text-primary)",
         textTitle: "var(--color-text-title)",
         sectionTitle: "var(--color-text-section-title)",
+        primaryTransparent: "var(--color-primary-transparent)",
       },
     },
   },

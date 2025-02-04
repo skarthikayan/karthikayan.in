@@ -32,6 +32,7 @@
     --color-text-primary: #999ab2;
     --color-text-title: #ffffff;
     --color-text-section-title: #93f2ff;
+    --color-primary-transparent: #09092558;
     scroll-behavior: smooth;
   }
 }

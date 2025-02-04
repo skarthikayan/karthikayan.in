@@ -42,7 +42,7 @@ function Projects() {
       id="projects"
       className=" flex items-start justify-start flex-col gap-4 p-4 lg:p-0 mb-4"
     >
-      <div className="lg:hidden w-[calc(100vw-1rem)] px-6 py-4 sticky top-0 backdrop-blur -ml-6">
+      <div className="lg:w-full w-[calc(100vw-1rem)] px-6 py-4 sticky top-0 backdrop-blur bg-primaryTransparent -ml-6">
         <h2 className="font-bold text-textTitle">WORK PROJECTS</h2>
       </div>
       <div>
