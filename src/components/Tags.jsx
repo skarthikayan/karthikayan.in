@@ -4,7 +4,7 @@ function Skills({ list }) {
       {list.map((item) => (
         <span
           key={item}
-          className="px-2 py-1  rounded-3xl text-sm text-textTags bg-tags"
+          className="px-3 py-1  rounded-3xl text-sm text-textTags bg-tags"
         >
           {item}
         </span>

@@ -117,18 +117,31 @@ function Header({ activeSection }) {
           </motion.a>
         ))}
       </div>
-      <motion.a
-        initial={{ y: 30, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.5 }}
-        className="p-1 mt-3 flex text-textTitle cursor-pointer text-lg items-center"
-        download="karthikayan_selvaraj"
-        target="_blank"
-        aria-label="Download Resume"
-        href="/resume.pdf"
-      >
-        <DownlaodIcon /> <span className="ml-3">Résumé</span>
-      </motion.a>
+      <div className="flex items-center mt-3">
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 1.5 }}
+          className="flex text-textTitle cursor-pointer text-lg items-center hover:underline"
+          target="_blank"
+          aria-label="View Resume"
+          href="/resume.pdf"
+        >
+          <span className="mr-3">Résumé</span>
+        </motion.a>
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 1.5 }}
+          className="flex text-textTitle cursor-pointer text-lg items-center"
+          download="karthikayan_selvaraj"
+          target="_blank"
+          aria-label="Download Resume"
+          href="/resume.pdf"
+        >
+          <DownlaodIcon />
+        </motion.a>
+      </div>
       <nav className="hidden lg:flex flex-col justify-center items-start mt-6 gap-4 min-h-[50vh] ">
         {navItems.map((item) => (
           <a
