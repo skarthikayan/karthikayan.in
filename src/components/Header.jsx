@@ -7,7 +7,7 @@ import GithubIcon from "../assets/githubIcon.svg?react";
 import LinkedInIcon from "../assets/linkedin.svg?react";
 import TwitterIcon from "../assets/twitter.svg?react";
 import MailIcon from "../assets/mail.svg?react";
-import DownlaodIcon from "../assets/download.svg?react";
+// import DownlaodIcon from "../assets/download.svg?react";
 
 function Header({ activeSection }) {
   const [randomNum] = useState(Math.floor(Math.random() * 4));
@@ -117,7 +117,7 @@ function Header({ activeSection }) {
           </motion.a>
         ))}
       </div>
-      <div className="flex items-center mt-3">
+      {/* <div className="flex items-center mt-3">
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -141,7 +141,7 @@ function Header({ activeSection }) {
         >
           <DownlaodIcon />
         </motion.a>
-      </div>
+      </div> */}
       <nav className="hidden lg:flex flex-col justify-center items-start mt-6 gap-4 min-h-[50vh] ">
         {navItems.map((item) => (
           <a

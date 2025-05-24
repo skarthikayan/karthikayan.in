@@ -1,11 +1,27 @@
 import { motion } from "framer-motion";
 import eLearning from "../assets/e-learning.png";
+import icis from "../assets/icis.png";
 import sandbox from "../assets/sandbox.png";
 
 import Tags from "./Tags";
 
 function Projects() {
   const projects = [
+    {
+      name: "ICIS - Idependent Commodity Intelligence Services",
+      link: "https://www.icis.com/explore/about/?intcmp=mega-menu-explore-about",
+      description:
+        "A web application that provides market intelligence and data analytics for the global chemical, energy, and fertilizer industries. I worked on building  UI for the application.",
+      icon: icis,
+      skills: [
+        "React.js",
+        "Styled Components",
+        "Piral",
+        "Micro Frontends",
+        "Jest",
+        "Docker",
+      ],
+    },
     {
       name: "Online Coding Platform",
       description:
