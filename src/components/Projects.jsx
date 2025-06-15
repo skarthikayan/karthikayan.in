@@ -23,7 +23,7 @@ function Projects() {
       ],
     },
     {
-      name: "Online Coding Platform",
+      name: "Fresco Labs - An online Coding Platform",
       description:
         "A web application, that enables users to access a coding environment directly from browser. This reduced the dependency on third party vendors, saving significant percentage of the cost incurred. I worked on creating APIs, UI and Docker Images of sandboxes for the application.",
       icon: sandbox,
@@ -38,7 +38,7 @@ function Projects() {
       ],
     },
     {
-      name: "Online Learning Platform",
+      name: "Fresco Play - An online Learning Platform",
       description:
         "A web applications that enables users to take online courses and assessments. I revamped the legacy UI code base to latest react version which improved the application performance",
       icon: eLearning,

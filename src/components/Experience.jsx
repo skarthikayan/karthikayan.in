@@ -10,7 +10,7 @@ function Experience() {
       period: "2025 - Present",
       description:
         "Contributing to the development of a large-scale, high-performance web application using React.js. Responsible for implementing new features, optimizing performance, and ensuring code quality through unit testing and code reviews.",
-      skills: ["Senior Software Developer II"],
+      skills: ["Senior Software Engineer 2"],
     },
     {
       name: "Tata Consultancy Services",
@@ -19,8 +19,9 @@ function Experience() {
       description:
         "Responsible for design, development and maintenance of React.js and Node.js web applications. Accountable for making strategic decisions regarding application architecture, technology stack, security and development practices, ensuring the application meets business requirements and industry standards.",
       skills: [
-        "Senior Software Developer 2020-2025",
-        "Software Developer 2016-2020",
+        "Assistant Consultant 2024-25",
+        "IT Analyst 2021-24",
+        "System Engineer 2016-20",
       ],
     },
   ];
