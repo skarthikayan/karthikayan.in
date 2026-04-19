@@ -9,7 +9,7 @@ function Experience() {
       link: "https://risk.lexisnexis.com/global/en/about-us",
       period: "2025 - Present",
       description:
-        "Contributing to the development of a large-scale, high-performance web application using React.js. Responsible for implementing new features, optimizing performance, and ensuring code quality through unit testing and code reviews.",
+        "Contributing to the development of a large-scale, high-performance web application using React.js and .NET. Responsible for implementing new features, optimizing performance, and ensuring code quality through unit testing and code reviews.",
       skills: ["Senior Software Engineer 2"],
     },
     {

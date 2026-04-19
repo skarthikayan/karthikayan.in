@@ -8,7 +8,7 @@ import Tags from "./Tags";
 function Projects() {
   const projects = [
     {
-      name: "ICIS - Idependent Commodity Intelligence Services",
+      name: "ICIS - Independent Commodity Intelligence Services",
       link: "https://www.icis.com/explore/about/?intcmp=mega-menu-explore-about",
       description:
         "A web application that provides market intelligence and data analytics for the global chemical, energy, and fertilizer industries. I worked on building  UI for the application.",
@@ -19,6 +19,9 @@ function Projects() {
         "Piral",
         "Micro Frontends",
         "Jest",
+        "C#",
+        ".NET",
+        "MongoDB",
         "Docker",
       ],
     },
